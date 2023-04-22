@@ -1,5 +1,7 @@
 *{
     background: #E2F3F5;
+    list-style: none;
+    text-decoration: none;
   }
   :root{
     --background-color : #E2F3F5;
@@ -14,6 +16,13 @@
   } 
   h1{
     color: var(--font-color);
+  }
+  h2{
+    
+    color: #757575;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
   }
   .btn{
     cursor: pointer;
@@ -73,6 +82,13 @@
     width: 5rem;
     border: 0px solid black;
     border-radius: 50%;
+  }
+  .jobDetails{
+    background-color: transparent;
+    padding-left: 22px;
+  }
+  .jobDetails > h2{
+    background-color: transparent;
   }
   .job_button{
     background-color: transparent;

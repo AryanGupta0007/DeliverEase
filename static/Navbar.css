@@ -1,5 +1,4 @@
-/* @import url('../static/style.css');
-
+@import url('../static/style.css');
 *{
     list-style-type: none ;
     text-decoration: none;
@@ -12,7 +11,7 @@
     align-items: center;
 }
 .nav h2{
-    color: var(--font-color);
+    color: #645888;
     font-family: "Kaushan Script";
     font-size: 1.55rem;
     font-weight: 400;
@@ -41,8 +40,8 @@
     color: var(--font-color);
     margin-left: 0.7rem;
 
-    /* display: none; 
-}*/
+     display: none; 
+}
 
 /*
 @media screen and (max-width: 750px) {
