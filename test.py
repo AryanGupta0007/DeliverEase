@@ -12,7 +12,8 @@ app = Flask(__name__)
 @app.route('/')
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
-    return render_template('sellerhomepage.html', page='sellerhomepage')
+    # return render_template('sellerhomepage.html', page='sellerhomepage')
+    return render_template('sellerCheckjob.html', page='sellerCheckjob')
 
 
 # main driver function
