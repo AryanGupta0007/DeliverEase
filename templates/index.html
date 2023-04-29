@@ -13,23 +13,30 @@
 <body>
     <div class="App">
 
-        <div class='nav'>
-            <h2> DeliverEase</h2>
-            <div class='nav_right'>
-                <ul class="mainMenu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-                <div>
-                    <button class='btn'> Login </button> 
-                </div>
+        
 
-                <div class='icons'>
-                    <ion-icon class="menuIcon"  name="menu"></ion-icon>
-                    <ion-icon class="closeIcon" name="close"></ion-icon>
+        <header class="header">
+            <nav class="navbar">
+                <h2> DeliverEase</h2>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="btn">My Orders</a> -->
+                        <button class="btn"> Login</button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-        </div>
-        </div>
+            </nav>
+        </header>
 
         <div class='container'>
             <h1> Empowering Delivery Partners,<br/>Connecting Communities!</h1>
@@ -57,35 +64,24 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
-        // menuIcon = document.querySelector('.menuIcon');
-        // closeIcon = document.querySelector('.closeIcon');
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLink = document.querySelectorAll(".nav-link");
 
-        // menuIcon.addEventListener('click', showNav);
-        // closeIcon.addEventListener('click', closeNav);
+            hamburger.addEventListener("click", mobileMenu);
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-        // function showNav(){
-        //     console.log("clicked");
-        // }
-        // function closeNav(){
-        //     console.log(" closenav clicked");
-        // }
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
 
-        const menuIcon = document.querySelector('.menuIcon');
-        const closeIcon = document.querySelector('.closeIcon');
-        const mainMenu = document.querySelector('.mainMenu');
-
-        menuIcon.addEventListener('click', () => {
-        mainMenu.classList.add('active');
-        menuIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-        });
-
-        closeIcon.addEventListener('click', () => {
-        mainMenu.classList.remove('active');
-        menuIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-        });
-
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
     </script>
+
+    
 </body>
 </html>

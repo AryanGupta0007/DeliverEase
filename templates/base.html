@@ -35,7 +35,7 @@
             </div>
         </header> -->
 
-         <nav> 
+         <!-- <nav> 
           <div class='navbar'>
               <h1> DeliverEase</h1>
                   <div class='nav_right'>
@@ -47,53 +47,63 @@
                       <button class="btn">Order Request</button>
                   </div>
           </div> 
-        </nav> 
+        </nav>  -->
+
+        <header class="header">
+          <nav class="navbar">
+              <h1> DeliverEase</h1>
+              <ul class="nav-menu">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- <a href="#" class="btn">My Orders</a> -->
+                      <button class="btn btn_sm"> My Order</button>
+                      <button class="btn btn_sm"> Order Request</button>
+                  </li>
+              </ul>
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+      </header>
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
         messages %} {% for category, message in messages %} {% if category ==
         'error' %}
-        <div class="alert alert-danger alter-dismissable fade show" role="alert">
           {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+         
         {% else %}
-        <div class="alert alert-success alter-dismissable fade show" role="alert">
           {{ message }}
-          <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+          
     {% endif %} {% endfor %} {% endif %} {% endwith %}
     {% block content %}
-    <center>
-        <h1>Welcome to Crypto Tracker</h1>
-    </center>
-    <h2>
-      <a href="/login">Login</a><br>
-      <a href="/register">Register</a>
-    </h2>
+    
     {% endblock %}
-    </div>
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
+    
 
   <script>
       // creating a responsive navbar
+      const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLink = document.querySelectorAll(".nav-link");
 
-      const mobile_nav = document.querySelector(".mobile_navbar_btn");
-      const headerEle = document.querySelector(".header");
+            hamburger.addEventListener("click", mobileMenu);
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-      mobile_nav.addEventListener('click', () =>{
-          console.log("clicked");
-          headerEle.classList.toggle('active');
-      })
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
   </script>
 </body>
 </html>

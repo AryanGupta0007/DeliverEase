@@ -24,6 +24,9 @@ h2{
     height: auto;
     /* background-color: #fff; */
 }
+.buyers_Jobdetails p{
+    font-size: 1.4rem;
+}
 .buyers_details_right{
     margin-left: 2rem;
 }
