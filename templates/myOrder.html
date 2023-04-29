@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block head %}
-{% if page == 'sellerhomepage' %}
+{% if page == 'myOrder' %}
 <link rel="stylesheet" href="/static/sellerJobBox.css">
 
 {% endif %}
 {% endblock %}
         {% block content %}
 
-         <div class="sellerJobBox">
-            <h2> Jobs </h2>
+        <div class="sellerJobBox">
+            <h2>Your Orders:- </h2>
 
             <div class="sellerJobs">
 
@@ -20,21 +20,22 @@
                             <!-- <img src="templates/user.png" alt="buyerImg">  -->
                         </div>
                         <div class="jobDetails">
-                                <h2> Job By :{{  buyer_name }} </h2>
+                                <h2> Job By :Username </h2>
                                 <div class="time">
-                                    <p> Delivery Time : {{ job_details_list[0] }}  </p>
-                                    <p> Pickup Time : {{ job_details_list[4] }} </p>
+                                    <p> Delivery Time : 2:00 PM  </p>
+                                    <p> Pickup Time : 2:00 PM  </p>
                                 </div>
                                 <div>
-                                    <p>Delivery Address: {{ job_details_list[2] }}</p>
-                                    <p>Pickup Address: {{ job_details_list[3] }}</p>
-    
+                                    <p>Delivery Address: Kolkata</p>
+                                    <p>Pickup Address: Kolkata</p>
+
                                 </div>
                         </div>
                     </div>
                     
                     <div class="job_button">
-                            <a href="/check-job"><button class="btn btn_sm"> Check job </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Chat </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Check Order </button></a>
                     </div>
                 </div>
                 <div class="eachJobBox">
@@ -45,21 +46,22 @@
                             <!-- <img src="templates/user.png" alt="buyerImg">  -->
                         </div>
                         <div class="jobDetails">
-                                <h2> Job By :{{  buyer_name }} </h2>
+                                <h2> Job By :Username </h2>
                                 <div class="time">
-                                    <p> Delivery Time : {{ job_details_list[0] }}  </p>
-                                    <p> Pickup Time : {{ job_details_list[4] }} </p>
+                                    <p> Delivery Time : 2:00 PM  </p>
+                                    <p> Pickup Time : 2:00 PM  </p>
                                 </div>
                                 <div>
-                                    <p>Delivery Address: {{ job_details_list[2] }}</p>
-                                    <p>Pickup Address: {{ job_details_list[3] }}</p>
-    
+                                    <p>Delivery Address: Kolkata</p>
+                                    <p>Pickup Address: Kolkata</p>
+
                                 </div>
                         </div>
                     </div>
                     
                     <div class="job_button">
-                            <a href="/check-job"><button class="btn btn_sm"> Check job </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Chat </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Check Order </button></a>
                     </div>
                 </div>
                 <div class="eachJobBox">
@@ -70,21 +72,22 @@
                             <!-- <img src="templates/user.png" alt="buyerImg">  -->
                         </div>
                         <div class="jobDetails">
-                                <h2> Job By :{{  buyer_name }} </h2>
+                                <h2> Job By :Username </h2>
                                 <div class="time">
-                                    <p> Delivery Time : {{ job_details_list[0] }}  </p>
-                                    <p> Pickup Time : {{ job_details_list[4] }} </p>
+                                    <p> Delivery Time : 2:00 PM  </p>
+                                    <p> Pickup Time : 2:00 PM  </p>
                                 </div>
                                 <div>
-                                    <p>Delivery Address: {{ job_details_list[2] }}</p>
-                                    <p>Pickup Address: {{ job_details_list[3] }}</p>
-    
+                                    <p>Delivery Address: Kolkata</p>
+                                    <p>Pickup Address: Kolkata</p>
+
                                 </div>
                         </div>
                     </div>
                     
                     <div class="job_button">
-                            <a href="/check-job"><button class="btn btn_sm"> Check job </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Chat </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Check Order </button></a>
                     </div>
                 </div>
                 <div class="eachJobBox">
@@ -95,21 +98,22 @@
                             <!-- <img src="templates/user.png" alt="buyerImg">  -->
                         </div>
                         <div class="jobDetails">
-                                <h2> Job By :{{  buyer_name }} </h2>
+                                <h2> Job By :Username </h2>
                                 <div class="time">
-                                    <p> Delivery Time : {{ job_details_list[0] }}  </p>
-                                    <p> Pickup Time : {{ job_details_list[4] }} </p>
+                                    <p> Delivery Time : 2:00 PM  </p>
+                                    <p> Pickup Time : 2:00 PM  </p>
                                 </div>
                                 <div>
-                                    <p>Delivery Address: {{ job_details_list[2] }}</p>
-                                    <p>Pickup Address: {{ job_details_list[3] }}</p>
-    
+                                    <p>Delivery Address: Kolkata</p>
+                                    <p>Pickup Address: Kolkata</p>
+
                                 </div>
                         </div>
                     </div>
                     
                     <div class="job_button">
-                            <a href="/check-job"><button class="btn btn_sm"> Check job </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Chat </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Check Order </button></a>
                     </div>
                 </div>
                 <div class="eachJobBox">
@@ -120,24 +124,26 @@
                             <!-- <img src="templates/user.png" alt="buyerImg">  -->
                         </div>
                         <div class="jobDetails">
-                                <h2> Job By :{{  buyer_name }} </h2>
+                                <h2> Job By :Username </h2>
                                 <div class="time">
-                                    <p> Delivery Time : {{ job_details_list[0] }}  </p>
-                                    <p> Pickup Time : {{ job_details_list[4] }} </p>
+                                    <p> Delivery Time : 2:00 PM  </p>
+                                    <p> Pickup Time : 2:00 PM  </p>
                                 </div>
                                 <div>
-                                    <p>Delivery Address: {{ job_details_list[2] }}</p>
-                                    <p>Pickup Address: {{ job_details_list[3] }}</p>
-    
+                                    <p>Delivery Address: Kolkata</p>
+                                    <p>Pickup Address: Kolkata</p>
+
                                 </div>
                         </div>
                     </div>
                     
                     <div class="job_button">
-                            <a href="/check-job"><button class="btn btn_sm"> Check job </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Chat </button></a>
+                            <a href="/check-job"><button class="btn btn_sm"> Check Order </button></a>
                     </div>
                 </div>
 
+                
             </div>
          </div>
          

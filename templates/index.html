@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/Navbar.css">
+    <link rel="stylesheet" href="/static/indexcontainer.css">
+
+</head>
+<body>
+    <div class="App">
+
+        <div class='nav'>
+            <h2> DeliverEase</h2>
+            <div class='nav_right'>
+                <ul class="mainMenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+                <div>
+                    <button class='btn'> Login </button> 
+                </div>
+
+                <div class='icons'>
+                    <ion-icon class="menuIcon"  name="menu"></ion-icon>
+                    <ion-icon class="closeIcon" name="close"></ion-icon>
+                </div>
+        </div>
+        </div>
+
+        <div class='container'>
+            <h1> Empowering Delivery Partners,<br/>Connecting Communities!</h1>
+      
+            <div class='containerLower'>
+      
+              <div class='left'>
+                      <p> New User ?</p>
+                  <Link to="/getstarted"> <button class='btn'> Get started</button> </Link>
+                  
+                  <button class='btn'> Who we are</button>
+              </div>
+      
+              <div class='right'>
+                  <img src="/static/indexPageImg.png" alt="homepageimg" />
+              </div>
+      
+            </div>
+        </div>
+            
+       
+       
+    </div>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // menuIcon = document.querySelector('.menuIcon');
+        // closeIcon = document.querySelector('.closeIcon');
+
+        // menuIcon.addEventListener('click', showNav);
+        // closeIcon.addEventListener('click', closeNav);
+
+        // function showNav(){
+        //     console.log("clicked");
+        // }
+        // function closeNav(){
+        //     console.log(" closenav clicked");
+        // }
+
+        const menuIcon = document.querySelector('.menuIcon');
+        const closeIcon = document.querySelector('.closeIcon');
+        const mainMenu = document.querySelector('.mainMenu');
+
+        menuIcon.addEventListener('click', () => {
+        mainMenu.classList.add('active');
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', () => {
+        mainMenu.classList.remove('active');
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>

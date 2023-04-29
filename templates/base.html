@@ -13,20 +13,41 @@
 </head>
 <body>
     <div class="App">
+      <!-- <header class="header"> 
+        <h1>DeliverEase</h1>
+          <nav class="navbar">
+            
+              <div class="nav_right">
+                <ul class="nav_link">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About Us</a></li>
+                </ul>
+                
+                <button class="btn btn_m">My order</button>
+                <button class="btn btn_m">Order Request</button>
+              
+              </div>
+            
+            </nav>
+            <div class="mobile_navbar_btn">
+              <ion-icon class="mobile_nav_icon" name="menu"></ion-icon>
+              <ion-icon class="mobile_nav_icon" name="close"></ion-icon>
+            </div>
+        </header> -->
 
-        <nav> 
-        <div class='navbar'>
-            <h1> DeliverEase</h1>
-                <div class='nav_right'>
-                    <ul class="nav_link">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                    </ul>
-                    <button class="btn"> My order</button>
-                    <button class="btn">Order Request</button>
-                </div>
-        </div> 
-        </nav>
+         <nav> 
+          <div class='navbar'>
+              <h1> DeliverEase</h1>
+                  <div class='nav_right'>
+                      <ul class="nav_link">
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/about">About Us</a></li>
+                      </ul>
+                      <button class="btn"> My order</button>
+                      <button class="btn">Order Request</button>
+                  </div>
+          </div> 
+        </nav> 
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
         messages %} {% for category, message in messages %} {% if category ==
         'error' %}
@@ -54,5 +75,25 @@
     </h2>
     {% endblock %}
     </div>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script>
+      // creating a responsive navbar
+
+      const mobile_nav = document.querySelector(".mobile_navbar_btn");
+      const headerEle = document.querySelector(".header");
+
+      mobile_nav.addEventListener('click', () =>{
+          console.log("clicked");
+          headerEle.classList.toggle('active');
+      })
+  </script>
 </body>
 </html>

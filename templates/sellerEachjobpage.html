@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
-{% if page == 'sellerCheckjob' %}
+{% if page == 'sellerEachjobpage' %}
 <link rel="stylesheet" href="/static/sellerCheckjob.css">
 
 
@@ -8,6 +8,7 @@
 {% endblock %}
         {% block content %}
 
+         
          <div class="checkJob">
 
             <div class="contentBox_sellercheckjob">
@@ -21,8 +22,9 @@
                   </div>
       
                   <div class="buyer_info">
-                     <h2>Buyer Name</h2> 
+                     <h2>Atrika show</h2> 
                      <h3> Buyer Since 2005</h3>
+                     <button class="btn">Chat</button>
                   </div>
               </div>
 
@@ -46,14 +48,18 @@
                            <h2>Deliver By:-</h2>
                            <p> 6 PM </p>
                         </div>
-                        <button class="btn" > Apply</button>
+                        <button class="btn" style="background-color: green"> Accept</button>
+                        <button class="btn" style="background-color: red"> Reject</button>
                      </div>
+
                      <div class="para">
-                        <p>Please don't drive faster than 40KM, take your time, the time we told you is just the customer expectations, we never promote, deliver time.</p>
+                        <p >Please don't drive faster than 40KM, take your time, the time we told you is just the customer expectations, we never promote, deliver time.</p>
                      </div>
+                     
                 </div>
 
             </div>
 
          </div>
+
     {% endblock %}

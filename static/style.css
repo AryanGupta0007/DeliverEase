@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap');
+@import url('../static/sellerJobBox.css');
 *{
     background: #E2F3F5;
     list-style: none;
@@ -41,6 +43,10 @@
     text-align: center;
     letter-spacing: -0.408px;
   }
+  .btn_sm{
+    width: 9rem;
+    height: 2.6rem;
+  }
   .btn:hover{
     background-color: transparent;
     color: var(--font-color);
@@ -72,6 +78,11 @@
     display: flex;
     align-items: center;
   }
+  .eachJobBox_left{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+  }
    .eachJobBox .image{
     background-color: transparent;
     display: flex;
@@ -84,8 +95,20 @@
     border-radius: 50%;
   }
   .jobDetails{
+    font-family: Inter;
     background-color: transparent;
     padding-left: 22px;
+  }
+  .jobDetails .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jobDetails .time p{
+    margin-right: 1.5rem;
+  }
+  .jobDetails div{
+    background-color: transparent;
   }
   .jobDetails > h2{
     background-color: transparent;
@@ -95,3 +118,9 @@
     position:absolute;
     right: 0;
   }
+
+
+
+  /*-----------------------------NAVBAR MEDIA QUERY------------------------------------*/
+
+
